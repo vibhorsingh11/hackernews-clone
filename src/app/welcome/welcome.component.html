@@ -1,6 +1,6 @@
-<div fxLayout fxLayout="column" fxLayoutGap="10px">
+<div fxLayout="column" fxLayoutGap="10px">
    <div *ngFor="let story of stories; let indexOfelement=index;">
-    {{indexOfelement + 1}}.<mat-icon>arrow_drop_up</mat-icon><a href="${{story.url}}">{{ story.title }}</a>
-    <p>{{story.score}} points by {{story.by}} {{story.time}} | hide | {{story.descendants}}comments</p>
+      {{indexOfelement + 1}}.<mat-icon>arrow_drop_up</mat-icon><a href="${{story.url}}">{{ story.title }}</a>      
+    <p>{{story.score}} points by {{story.by}} {{story.time}} | hide | {{story.descendants}} comments</p>
    </div>
 </div>

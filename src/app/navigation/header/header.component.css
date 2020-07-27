@@ -10,3 +10,7 @@ a:active, a:hover {
 mat-toolbar {
     background-color: #ff3d00;
 }
+
+img {
+    height: 50px;
+}

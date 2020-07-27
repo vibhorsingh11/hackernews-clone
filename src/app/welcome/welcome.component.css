@@ -2,3 +2,19 @@ a {
     text-decoration: none;
     color: black;
 }
+
+p {
+    margin-left: 35px;
+    color: gray;
+    font-size: 11px;
+}
+
+div {
+    margin-left: 10px;
+}
+
+mat-icon {
+    vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
