@@ -9,12 +9,14 @@ import { MaterialModule } from './material.module';
 import { HeaderComponent } from './navigation/header/header.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { NewsService } from './news.service';
+import { NewStoriesComponent } from './new-stories/new-stories.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    NewStoriesComponent
   ],
   imports: [
     BrowserModule,
