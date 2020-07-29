@@ -14,9 +14,10 @@ export class NewsService {
 
     constructor(private http: HttpClient) {}
 
-    getStories(storyType) {
+    getStories(storyType, start = 0, end = 30) {
+        this.storys = [];
         this.http.get<number[]>(`https://hacker-news.firebaseio.com/v0/${storyType}.json?print=pretty`)
-        .pipe(map(x => x.slice(0, 30)))
+        .pipe(map(x => x.slice(start, end)))
         .subscribe((story: any[]) => {
             story.map(item => {
                 this.http.get<Story>(`https://hacker-news.firebaseio.com/v0/item/${item}.json?print=pretty`)

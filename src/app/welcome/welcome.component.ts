@@ -14,12 +14,20 @@ export class WelcomeComponent implements OnInit, OnDestroy {
   storySubs: Subscription;
 
   constructor(private newsService: NewsService) { }
+  startIndex: number = 0;
+  endIndex: number = 30;
 
   ngOnInit() {
     this.storySubs = this.newsService.storysChanged.subscribe(storys => {
       this.stories = storys;
     })
     this.newsService.getStories("topstories");
+  }
+
+  loadMore() {
+    this.startIndex += 30;
+    this.endIndex += 30;
+    this.newsService.getStories("topstories", this.startIndex, this.endIndex);
   }
 
   ngOnDestroy() {
