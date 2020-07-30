@@ -1,0 +1,14 @@
+<div fxLayout="column" fxLayoutGap="10px">
+    <div class="past">
+        <p>Stories.from {{ todayDate }}</p>
+        <p>Go back a <a>day</a>, <a>month</a>, or <a>year</a>. Go forward a day.</p>
+    </div>
+    <div *ngFor="let story of stories; let indexOfelement=index;">
+       {{indexOfelement + startIndex + 1}}.<mat-icon>arrow_drop_up</mat-icon><a href="${{story.url}}">{{ story.title }}</a>      
+     <p>{{story.score}} points by {{story.by}} {{story.time}} | hide | {{story.descendants}} comments</p>
+    </div>
+    <div>
+       <button mat-raised-button (click)="loadMore()">Load More</button>
+       <hr>
+    </div>
+ </div>

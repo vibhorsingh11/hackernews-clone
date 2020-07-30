@@ -1,0 +1,25 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    margin-left: 35px;
+    color: gray;
+    font-size: 11px;
+}
+
+.past p {
+    font-size: 15px;
+    color: gray;
+}
+
+div {
+    margin-left: 10px;
+}
+
+mat-icon {
+    vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
