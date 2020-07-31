@@ -11,6 +11,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { NewsService } from './news.service';
 import { NewStoriesComponent } from './new-stories/new-stories.component';
 import { PastStoriesComponent } from './past-stories/past-stories.component';
+import { AskComponent } from './ask/ask.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PastStoriesComponent } from './past-stories/past-stories.component';
     HeaderComponent,
     WelcomeComponent,
     NewStoriesComponent,
-    PastStoriesComponent
+    PastStoriesComponent,
+    AskComponent
   ],
   imports: [
     BrowserModule,
